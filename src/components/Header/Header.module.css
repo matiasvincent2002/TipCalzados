@@ -1,0 +1,40 @@
+/* Header.module.css */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.customCarousel {
+
+  margin: 30px auto;
+  width: 70%; /* Ajusta el ancho del Carousel al 100% del contenedor */
+  max-height: 600px; /* Establece la altura máxima del Carousel */
+  overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
+}
+
+.image {
+  margin: 0 auto;
+  width: auto;
+  height: auto; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+  border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sutil sombra a las imágenes */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ajusta el ancho de los controles de navegación */
+  top: 50%; /* Coloca los controles en el 50% de la altura del Carousel */
+  transform: translateY(-50%); /* Centra verticalmente los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7); /* Cambia el color de fondo de los íconos de navegación */
+  border-radius: 50%; /* Agrega bordes redondeados a los íconos de navegación */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  color: white; /* Cambia el color de los íconos de navegación */
+}
