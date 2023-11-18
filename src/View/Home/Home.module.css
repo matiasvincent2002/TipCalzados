@@ -1,6 +1,33 @@
 .homeContainer{
     width: 100vw;
     height: 100vh;
-    background: #999;
+
     display: flex;
+    flex-direction: column;
 }
+
+
+/* Header.module.css */
+/* ... (otros estilos) */
+.featuredSection {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .featuredItem {
+
+  margin: 20px;
+  }
+  
+  .featuredImage {
+    border: 1px solid #333;
+    width: 300px; /* Fija el ancho de la imagen en 200px */
+    height: auto;
+  }
+  
+  /* ... (otros estilos) */
+  

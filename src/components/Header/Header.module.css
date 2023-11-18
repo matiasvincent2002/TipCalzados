@@ -2,19 +2,21 @@
 .header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background:white;
 }
 
 .customCarousel {
-  margin: 30px auto;
-  width: 70%; /* Ajusta el ancho del Carousel al 70% del contenedor */
+  margin: 60px auto;
+  width: 100%; /* Ajusta el ancho del Carousel al 70% del contenedor */
   max-height: 600px; /* Establece la altura máxima del Carousel */
   overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
 }
 
 .image {
   margin: 0 auto;
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  width: 1000px; /* Ajusta el ancho de la imagen al 100% del contenedor */
   height: auto; /* Establece la altura automática para mantener la proporción */
   border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sutil sombra a las imágenes */
@@ -36,4 +38,71 @@
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
   color: white; /* Cambia el color de los íconos de navegación */
+}
+
+.navbar {
+  background-color: #343a40;
+  width: 100%;
+  margin: 0;
+ /* Cambia el color de fondo de la barra de navegación */
+}
+/* Header.module.css */
+/* Header.module.css */
+.customNavbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #343a40; /* Color de fondo de la barra de navegación */
+  padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.logo {
+  font-size: 30px;
+  color: white;
+  flex:1;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.searchInput {
+  width: 100%; /* Ancho de la barra de búsqueda */
+  padding: 10px;
+  border: none;
+
+  border-radius: 20px;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 25px;
+  margin:5px; /* Espacio entre la barra de búsqueda y el botón */
+}
+
+.navOptions {
+  display: flex;
+  flex:1;
+  justify-content: flex-end;
+  gap: 20px; /* Espacio entre las opciones de navegación */
+}
+
+.navOptions a {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease; /* Efecto de transición en el color */
+}
+
+.navOptions a:hover {
+  color: #61dafb; /* Color al pasar el mouse sobre las opciones */
 }
