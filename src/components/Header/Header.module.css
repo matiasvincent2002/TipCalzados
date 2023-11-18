@@ -6,17 +6,16 @@
 }
 
 .customCarousel {
-
   margin: 30px auto;
-  width: 70%; /* Ajusta el ancho del Carousel al 100% del contenedor */
+  width: 70%; /* Ajusta el ancho del Carousel al 70% del contenedor */
   max-height: 600px; /* Establece la altura máxima del Carousel */
   overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
 }
 
 .image {
   margin: 0 auto;
-  width: auto;
-  height: auto; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Establece la altura automática para mantener la proporción */
   border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sutil sombra a las imágenes */
 }
