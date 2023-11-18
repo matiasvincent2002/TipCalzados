@@ -6,6 +6,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ProductCard from '../../components/Product/Product.jsx'; // Ajusta la ruta según tu estructura
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight,  } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../../components/Footer/Footer.jsx'; // Agrega la importación
+
 
 const featuredProducts = [
   {
@@ -221,6 +225,19 @@ const Home = () => {
           ))}
         </Slider>
       </div>
+  {/* Banner con formulario */}
+  <div className={style.banner}>
+        <h1>Recibí todas las ofertas</h1>
+        <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
+        <form>
+          <label className={style.containerForm}>
+          <input type="email" id="email" name="email" placeholder='email' />
+          <button type="submit"><FontAwesomeIcon icon={faArrowRight} /></button>
+
+          </label>
+        </form>
+      </div>  
+      <Footer />
     </div>
   );
 };

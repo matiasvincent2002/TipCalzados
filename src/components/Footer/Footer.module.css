@@ -1,0 +1,79 @@
+/* Footer.module.css */
+.footer {
+    background-color: #888; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    padding: 20px; /* Espaciado interno del footer */
+    text-align: left;
+    margin-top: 60px;
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido en la página */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px; /* Espaciado entre columnas */
+  }
+  
+  .heading {
+    font-size: 1.3em; /* Tamaño de fuente para los encabezados de columna */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+
+  }
+  
+  .menuItem {
+    margin-bottom: 8px; /* Espaciado entre elementos del menú */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+ .menuItemContact{
+    margin-bottom: 8px; /* Espaciado entre elementos del menú */
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    align-items: center;
+ }
+  .menuLink {
+    text-decoration: none;
+    color: #fff; /* Color de enlace en el menú */
+  }
+  
+  .divider {
+    border-top: 1px solid #fff; /* Línea divisoria entre secciones */
+    margin: 20px 0; /* Espaciado antes y después de la línea divisoria */
+  }
+  
+  .paymentsShippingLogos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .legal {
+    margin-top: 20px; /* Espaciado superior para la sección legal */
+  }
+  
+  .copyright {
+    font-size: 0.8em; /* Tamaño de fuente para el aviso de copyright */
+  }
+  
+  .poweredByLogo {
+    margin-top: 10px; /* Espaciado superior para el logo de Tiendanube */
+  }
+  .paymentIcons img {
+    margin-right: 10px; /* Espaciado entre logos */
+
+  }
