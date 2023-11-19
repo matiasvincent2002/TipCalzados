@@ -1,6 +1,6 @@
 /* Footer.module.css */
 .footer {
-    background-color: #888; /* Color de fondo del footer */
+    background-color: #333; /* Color de fondo del footer */
     color: #fff; /* Color del texto del footer */
     padding: 20px; /* Espaciado interno del footer */
     text-align: left;
@@ -60,6 +60,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
   }
   
   .legal {

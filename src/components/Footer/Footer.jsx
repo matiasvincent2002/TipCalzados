@@ -75,25 +75,27 @@ const Footer = () => {
               </div>
              
             </div>
-            <div className={style.column}>
-                        <div className={style.paymentsShippingLogos}>
-                            <div className={style.column}><h3>Medio de envío</h3></div>
-                            <div className={style.shippingIcons}>
-                                
-                                    <img
+
+          </div>
+          
+        </div>
+        <div className={style.row}>
+        <div className={style.column}>
+            <div className={style.paymentsShippingLogos}>
+            <div className={style.column}><h3>Medio de envios</h3></div>
+            <div className={style.shippingIcons}>
+             <img
                                       
                                         src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/ar/oca@2x.png"
                                         alt="rere"
                                         className={style.shippingIcon}
                                         width="40"
                                         height="25"
-                                    />
+         />
                        
                             </div>
                         </div>
-                    </div>
-          </div>
-        </div>
+                    </div></div>
         <div className={style.legal}>
           <div className={style.row}>
           
