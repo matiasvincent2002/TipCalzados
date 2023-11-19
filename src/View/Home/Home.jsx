@@ -7,9 +7,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ProductCard from '../../components/Product/Product.jsx'; // Ajusta la ruta según tu estructura
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight,  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../components/Footer/Footer.jsx'; // Agrega la importación
-
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const featuredProducts = [
   {
@@ -212,6 +212,9 @@ const Home = () => {
   return (
     <div className={style.homeContainer}>
       <Header />
+      <div className={style.whatsappButton} >
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </div>
       {/* Otras secciones de la página Home */}
 
       {/* Sección de destacados */}

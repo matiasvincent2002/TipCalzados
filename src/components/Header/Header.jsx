@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { Carousel, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCarBurst, faCartShopping, faComment, faCommentSms, faHome, faSearch, faTextHeight, faUser } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'react-slick'; // Importa Slider de react-slick
 import style from './Header.module.css';
 import img1 from '../../assets/headerimg.jpg';
 import img2 from '../../assets/headerimg2.jpg';
 import img3 from '../../assets/headerimg3.jpg';
-
+import logo from '../../assets/logo.jpg'
 
 const imagePaths = {
   image1: img1,
@@ -33,7 +33,9 @@ const Header = () => {
       {/* Navbar */}
       <div className={style.customNavbar}>
         {/* Logo */}
-        <div className={style.logo}>Tip</div>
+        <div className={style.logo}>
+          <img src={logo}></img>
+        </div>
 
         {/* Barra de búsqueda */}
         <div className={`${style.searchBar}`}>
@@ -45,10 +47,15 @@ const Header = () => {
 
         {/* Opciones de navegación */}
         <div className={`${style.navOptions}`}>
-          <a href="#home">Inicio</a>
-          <a href="#acerca">Acerca de</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#contacto">Contacto</a>
+          <div className={style.columnIcon}>
+          <FontAwesomeIcon icon={faComment} className={style.iconFontAwesome}></FontAwesomeIcon><a href="#home">Ayuda</a>
+          </div>
+          <div className={style.columnIcon}>
+        <FontAwesomeIcon icon={faUser} className={style.iconFontAwesome}></FontAwesomeIcon><a href="#acerca">Acerca de</a>
+          </div>
+          <div className={style.columnIcon}>
+          <FontAwesomeIcon icon={faCartShopping} className={style.iconFontAwesome}></FontAwesomeIcon><a href="#servicios">Mi carrito</a>
+         </div>
         </div>
       </div>
 

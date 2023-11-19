@@ -8,7 +8,7 @@
 }
 
 .customCarousel {
-  margin: 60px auto;
+  margin: 200px auto;
   width: 100%; /* Ajusta el ancho del Carousel al 70% del contenedor */
   max-height: 600px; /* Establece la altura máxima del Carousel */
   overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
@@ -51,6 +51,10 @@
 .customNavbar {
   width: 100%;
   display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 0;
   justify-content: space-around;
   align-items: center;
   background-color: #343a40; /* Color de fondo de la barra de navegación */
@@ -58,11 +62,14 @@
 }
 
 .logo {
-  font-size: 30px;
-  color: white;
+
+
   flex:1;
 }
-
+.logo img{
+  width: 70px;
+  
+}
 .searchBar {
   display: flex;
   align-items: center;
@@ -92,7 +99,13 @@
   display: flex;
   flex:1;
   justify-content: flex-end;
+  margin-right: 20px;
+  text-align: center;
   gap: 20px; /* Espacio entre las opciones de navegación */
+  transition: color 0.3s ease; 
+}
+.navOptions .iconFontAwesome{
+  font-size: 24px;
 }
 
 .navOptions a {
@@ -100,9 +113,16 @@
   color: rgb(138, 138, 138);
   font-weight: bold;
   font-size: 14px;
-  transition: color 0.3s ease; /* Efecto de transición en el color */
+  /* Efecto de transición en el color */
+  display: flex;
+  flex-direction: column;
 }
 
 .navOptions a:hover {
   color: #61dafb; /* Color al pasar el mouse sobre las opciones */
+  scale: 1.1;
+}
+.columnIcon:hover{
+  color: #61dafb; 
+  scale: 1.1;
 }
