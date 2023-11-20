@@ -97,11 +97,9 @@
 
 .navOptions {
   display: flex;
-  flex:1;
+  flex: 1;
   justify-content: flex-end;
-  margin-right: 20px;
-  text-align: center;
-  gap: 20px; /* Espacio entre las opciones de navegación */
+ /* Espacio entre las opciones de navegación */
   transition: color 0.3s ease; 
 }
 .navOptions .iconFontAwesome{
@@ -122,7 +120,14 @@
   color: #61dafb; /* Color al pasar el mouse sobre las opciones */
   scale: 1.1;
 }
+.columnIcon{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 .columnIcon:hover{
   color: #61dafb; 
   scale: 1.1;
 }
+
