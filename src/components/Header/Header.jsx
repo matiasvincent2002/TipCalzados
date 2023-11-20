@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCarBurst, faCartShopping, faComment, faCommentSms, faHome, faSearch, faTextHeight, faUser } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'react-slick'; // Importa Slider de react-slick
 import style from './Header.module.css';
-import img1 from '../../assets/headerimg.jpg';
-import img2 from '../../assets/headerimg2.jpg';
-import img3 from '../../assets/headerimg3.jpg';
+import img1 from '../../assets/ringo.jpg';
+import img2 from '../../assets/ringo2.jpg';
+import img3 from '../../assets/ringo3.jpg';
 import logo from '../../assets/logo.jpg'
 
 const imagePaths = {
@@ -31,6 +31,7 @@ const Header = () => {
   return (
     <div className={style.header}>
       {/* Navbar */}
+   
       <div className={style.customNavbar}>
         {/* Logo */}
         <div className={style.logo}>
@@ -43,6 +44,7 @@ const Header = () => {
           <button className={style.searchButton}>
             <FontAwesomeIcon icon={faSearch} />
           </button>
+          
         </div>
 
         {/* Opciones de navegación */}
@@ -57,8 +59,15 @@ const Header = () => {
           <FontAwesomeIcon icon={faCartShopping} className={style.iconFontAwesome}></FontAwesomeIcon><a href="#servicios">Mi carrito</a>
          </div>
         </div>
-      </div>
 
+      </div>
+    {/* Nueva sección de navegación */}
+    <ul className={style.navigationList}>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+        </ul>
+     
       {/* Carousel principal */}
       <div className={style.carouselContainer}>
         <Carousel
