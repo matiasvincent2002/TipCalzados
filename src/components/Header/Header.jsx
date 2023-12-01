@@ -1,5 +1,6 @@
 // Header.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCarBurst, faCartShopping, faComment, faCommentSms, faHome, faSearch, faTextHeight, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -63,10 +64,10 @@ const Header = () => {
       </div>
     {/* Nueva sección de navegación */}
     <ul className={style.navigationList}>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#quienes-somos">Quiénes somos</a></li>
-        </ul>
+        <li><Link to="/inicio">Inicio</Link></li>
+        <li><Link to="/productos">Productos</Link></li>
+        <li><Link to="/quienes-somos">Quiénes somos</Link></li>
+      </ul>
      
       {/* Carousel principal */}
       <div className={style.carouselContainer}>

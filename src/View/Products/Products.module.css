@@ -1,0 +1,91 @@
+.productsContainer {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .galleryContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .filterGallery {
+    flex: 0.3   ;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .filterGallery h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .filterGallery h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .filterGallery ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filterGallery li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .filterGallery li:hover {
+    color: #007bff;
+  }
+  
+  .filterGallery input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .filterGallery input[type="checkbox"]:checked {
+    background-color: #007bff;
+  }
+  
+  .productsDisplay {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .productGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .productCard {
+    width: 23%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  

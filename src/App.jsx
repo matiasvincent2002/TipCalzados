@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/productos" element={<Products />} />
         <Route path="/shopping-cart" element={<ShoppingCartView />} />
         {/* Puedes agregar más rutas según sea necesario */}
       </Routes>
