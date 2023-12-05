@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Products.module.css';
 import ProductCard from '../../components/Product/Product.jsx'; // Ajusta la ruta según tu estructura
+
+
 const Products = () => {
   const featuredProducts = [
     {
@@ -189,6 +191,7 @@ const Products = () => {
   const priceRanges = ["Desde", "Hasta"];
 
   return (
+   
     <section className={style.productsContainer}>
       <div className={style.galleryContainer}>
       <aside className={style.filterGallery}>

@@ -1,7 +1,11 @@
-// Home.jsx
-import React from 'react';
+// Importa todas las librerías y componentes necesarios
+import React, { useState } from 'react';
 import style from './Home.module.css';
 import Header from '../../components/Header/Header';
+import img1 from '../../assets/ringo.jpg';
+import img2 from '../../assets/ringo2.jpg';
+import img3 from '../../assets/ringo3.jpg';
+import { Carousel } from 'react-bootstrap';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -10,6 +14,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../../components/Footer/Footer.jsx'; // Agrega la importación
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import Products from '../Products/Products.jsx';
+
+const imagePaths = {
+  image1: img1,
+  image2: img2,
+  image3: img3,
+  // Agrega más imágenes según sea necesario
+};
 
 const featuredProducts = [
   {
@@ -208,16 +220,41 @@ const featuredCarouselSettings = {
   ],
 };
 
+
+
 const Home = () => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <div className={style.homeContainer}>
       <Header />
-      <div className={style.whatsappButton} >
+      <div className={style.whatsappButton}>
         <FontAwesomeIcon icon={faWhatsapp} />
       </div>
-      {/* Otras secciones de la página Home */}
+
+      {/* Carousel principal */}
+      <div className={style.carouselContainer}>
+        <Carousel
+          activeIndex={index}
+          onSelect={handleSelect}
+          className={`w-100 ${style.customCarousel}`}
+          interval={3000}
+          slide
+>
+          {Object.values(imagePaths).map((path, idx) => (
+            <Carousel.Item key={idx}>
+              <img className={`d-block ${style.image}`} src={path} alt={`Imagen ${idx + 1}`} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
 
       {/* Sección de destacados */}
+      <div className={style.containerFeaturedSection}>
       <div className={style.featuredSection}>
         <h2>Destacados</h2>
         <Slider {...featuredCarouselSettings}>
@@ -228,18 +265,22 @@ const Home = () => {
           ))}
         </Slider>
       </div>
-  {/* Banner con formulario */}
-  <div className={style.banner}>
+      </div>
+      <div className={style.containerProductsHome}>
+            <Products/>
+      </div>
+      {/* Banner con formulario */}
+      <div className={style.banner}>
         <h1>Recibí todas las ofertas</h1>
         <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
         <form>
           <label className={style.containerForm}>
-          <input type="email" id="email" name="email" placeholder='email' />
-          <button type="submit"><FontAwesomeIcon icon={faArrowRight} /></button>
-
+            <input type="email" id="email" name="email" placeholder='email' />
+            <button type="submit"><FontAwesomeIcon icon={faArrowRight} /></button>
           </label>
         </form>
-      </div>  
+      </div>
+
       <Footer />
     </div>
   );

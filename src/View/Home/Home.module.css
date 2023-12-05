@@ -6,7 +6,11 @@
     flex-direction: column;
 }
 
-
+.containerFeaturedSection{
+  width: 100%;
+  display: flex;
+  background-color: #000;
+}
 /* Header.module.css */
 /* ... (otros estilos) */
 .featuredSection {
@@ -16,8 +20,11 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    
   }
-  
+  .featuredSection h2{
+    color: white;
+  }
   .featuredItem {
 
   margin: 20px;
@@ -115,4 +122,40 @@
   .banner button:hover {
     transform: scale(1.3);
   }
+  .customCarousel {
+    margin: 200px auto;
+    width: 100%; /* Ajusta el ancho del Carousel al 70% del contenedor */
+    max-height: 600px; /* Establece la altura máxima del Carousel */
+    overflow: hidden; /* Oculta cualquier contenido que exceda la altura máxima */
+  }
   
+  .image {
+    margin: 0 auto;
+    width: 1000px; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Establece la altura automática para mantener la proporción */
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sutil sombra a las imágenes */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Ajusta el ancho de los controles de navegación */
+    top: 50%; /* Coloca los controles en el 50% de la altura del Carousel */
+    transform: translateY(-50%); /* Centra verticalmente los controles */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el color de fondo de los íconos de navegación */
+    border-radius: 50%; /* Agrega bordes redondeados a los íconos de navegación */
+  }
+  
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before {
+    color: white; /* Cambia el color de los íconos de navegación */
+  }
+  .containerProductsHome{
+    display: flex;
+    margin-top: 100px;
+    border: 1px solid #333;
+  }
