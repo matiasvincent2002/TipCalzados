@@ -9,7 +9,8 @@
 .containerFeaturedSection{
   width: 100%;
   display: flex;
-  background-color: #000;
+  border: 1px solid #33333390;
+  background: #99999920;
 }
 /* Header.module.css */
 /* ... (otros estilos) */

@@ -36,7 +36,7 @@ const Nav = () => {
       </div>
 
       <ul className={style.navigationList}>
-        <li><Link to="/inicio">Inicio</Link></li>
+        <li><Link to="/">Inicio</Link></li>
         <li><Link to="/productos">Productos</Link></li>
         <li><Link to="/quienes-somos">Quiénes somos</Link></li>
       </ul>
