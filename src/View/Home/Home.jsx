@@ -266,9 +266,10 @@ const Home = () => {
         </Slider>
       </div>
       </div>
-      <div className={style.containerProductsHome}>
-            <Products/>
-      </div>
+    {//<div className={style.containerProductsHome}>
+       //     <Products/>
+      //SS</div>}
+    }
       {/* Banner con formulario */}
       <div className={style.banner}>
         <h1>Recibí todas las ofertas</h1>

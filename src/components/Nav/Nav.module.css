@@ -29,6 +29,8 @@
     align-items: center;
     background-color: #343a40; /* Color de fondo de la barra de navegación */
     padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   
 .searchBar {
@@ -115,3 +117,65 @@
     color: #61dafb; /* Cambia el color al pasar el mouse sobre las opciones */
     scale: 1.2;
   }
+
+  
+
+
+  /* Añadir estos estilos al final de Nav.module.css */
+
+.showMobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background: #343a40;
+  z-index: 999;
+}
+
+.mobileMenuIcon {
+  display: none; /* Oculta el botón de hamburguesa en dispositivos de escritorio */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navOptions {
+    display: none; /* Oculta las opciones de navegación en dispositivos móviles */
+  }
+
+  .mobileMenuIcon {
+    display: block; /* Muestra el botón de hamburguesa en dispositivos móviles */
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+    position: fixed;
+    right: 30px;
+    }
+
+  .navigationList {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #343a40;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Oculta la lista de navegación en dispositivos de escritorio */
+  }
+
+  .navigationList.showMobileMenu {
+    display: flex; /* Muestra la lista de navegación cuando el menú está abierto */
+  }
+
+  .searchBar{
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    border-radius: 0px;
+  }
+}
