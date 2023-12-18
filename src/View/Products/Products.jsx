@@ -2,7 +2,9 @@ import React,{useState} from 'react';
 import style from './Products.module.css';
 import ProductCard from '../../components/Product/Product.jsx'; // Ajusta la ruta según tu estructura
 import Nav from '../../components/Nav/Nav.jsx'
-
+import Footer from '../../components/Footer/Footer.jsx';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Products = () => {
   // Contenido de script.js
   const [isFilterMenuOpen, setFilterMenuOpen] = useState(false);
@@ -442,7 +444,12 @@ const Products = () => {
             </div>
           </article>
       </div>
-    </section></>
+      <div className={style.whatsappButton}>
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </div>
+
+    </section>
+    <Footer></Footer></>
 
   );
 };

@@ -31,7 +31,9 @@
 
 /* Estilos para cada elemento de productos destacados */
 .featuredItem {
-  margin: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Estilos para la imagen de cada producto destacado */
@@ -169,4 +171,24 @@
   display: flex;
   margin-top: 100px;
   border: 1px solid #333;
+}
+@media (max-width: 768px) {
+
+.image {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  .featuredItem{
+    margin: 0px auto;
+    transform: scale(.8);
+    
+    display: flex;
+    justify-content: center;
+  }
+  .featuredItem .productCard{
+    margin:  0 auto;
+  }
 }
