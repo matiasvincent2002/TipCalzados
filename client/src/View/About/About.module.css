@@ -1,0 +1,45 @@
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+.whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    font-size: 34px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: .3s all;
+  }
+.aboutHeading{
+    scale: 1.1;
+}
+.aboutSection{
+
+    margin: 10% auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+  
+    align-items: center;
+}
+.aboutText{
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    margin: 20px;
+}

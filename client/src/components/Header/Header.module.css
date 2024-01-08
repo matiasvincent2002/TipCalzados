@@ -1,0 +1,22 @@
+/* Header.module.css */
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:white;
+}
+
+
+
+.columnIcon{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.columnIcon:hover{
+  color: #61dafb; 
+  scale: 1.1;
+}
+

@@ -1,0 +1,70 @@
+/* Product.module.css */
+
+.productCard {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  text-align: left;
+  max-width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Agregamos transición para la opacidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9; /* Agregamos opacidad predeterminada */
+}
+@media screen and (max-width: 1280px) {
+  .productCard {
+    max-width: 300px;
+  }
+}
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  opacity: 1; /* Devolvemos la opacidad al 100% en el hover */
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+
+.productTitle {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 60px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.productPrice {
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.productInstallments {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #555;
+}
+
+.productRating {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.productShipping {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #2ecc71;
+}
